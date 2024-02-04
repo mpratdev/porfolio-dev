@@ -52,3 +52,8 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## 🎥Actual minute of the video🎥
+https://www.twitch.tv/videos/2014313754
+min --> 01:38:20

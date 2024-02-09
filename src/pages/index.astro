@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
+import Projects from '../components/Projects.astro';
 import SectionContainer from '../components/SectionContainer.astro'
 import LinkedInIcon from '../components/icons/LinkedIn.astro'
 import GitHubIcon from '../components/icons/GitHub.astro'
@@ -8,6 +9,7 @@ import Briefcase from '../components/icons/Briefcase.astro'
 import SocialPill from '../components/SocialPill.astro'
 import MailIcon from '../components/icons/Mail.astro'
 import Experience from '../components/Experience.astro';
+import CodeIcon from '../components/icons/Code.astro';
 ---
 
 <Layout 
@@ -16,9 +18,9 @@ import Experience from '../components/Experience.astro';
 >
 	<main class="px-4">
 
-		<SectionContainer class="py-44 pb-24">
+		<SectionContainer class="py-44 pb-32">
 			<h1 
-				class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10"
+				class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
 			>
 				Hey, soy MartiDev <a 
 					href="https://www.linkedin.com/in/midudev" target="_blank"
@@ -28,7 +30,7 @@ import Experience from '../components/Experience.astro';
 					<Badge>Disponible para trabajar</Badge>
 				</a>
 			</h1>
-			<h2 class="text-2xl text-wrap max-w-[700px]">
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
 				<span>
 					+15 años de experiencia.
 				</span>
@@ -43,28 +45,36 @@ import Experience from '../components/Experience.astro';
 				</span>
 			</h2>
 
-			<nav class="flex gap-x-4 mt-8">
+			<nav class="flex gap-4 mt-8 flex-wrap">
 				<SocialPill href="https://linkedin.com/in/midudev">
-					<LinkedInIcon class="size-6" />
+					<LinkedInIcon class="size-4 md:size-6" />
 					LinkedIn
 				</SocialPill>
 				<SocialPill href="https://github.com/midudev">
-					<GitHubIcon class="size-6" />
+					<GitHubIcon class="size-4 md:size-6" />
 					GitHub
 				</SocialPill>
 				<SocialPill href="mailto:mpratmaya@gmail.com">
-					<MailIcon class="size-6" />
+					<MailIcon class="size-4 md:size-6" />
 					mpratmaya@gmail.com
 				</SocialPill>
 			</nav> 
 		</SectionContainer>
 		
 		<SectionContainer id="experiencia">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
 				<Briefcase class="size-7"/>
 				Experiencia laboral
 			</h2>
 			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<CodeIcon class="size-7"/>
+				Proyectos
+			</h2>
+			<Projects />
 		</SectionContainer>
 	</main>
 </Layout>
